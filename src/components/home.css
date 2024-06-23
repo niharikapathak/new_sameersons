@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.landing-section {
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  height: 68vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end; /* Align items to the right side */
+  padding: 20px;
+  position: relative;
+  overflow: hidden; /* Hide overflow to prevent images from showing outside */
+}
+
+.symbol-image {
+  position: absolute; /* Position the image absolutely */
+  top: 25%; /* Adjust top positioning as needed */
+  right: 19%; /* Adjust right positioning as needed */
+  width: 100px; /* Set width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.slide-container {
+  margin-left: 7%;
+  position: absolute;
+  left: 15px; /* Adjust left position */
+  bottom: 0; /* Start at the bottom of the landing-section */
+  display: flex;
+  flex-wrap: wrap; /* Ensure images wrap to next line */
+  gap: 10px; /* Adjust gap between images */
+  width: calc(50% - 10px); /* Set width to fit within landing-section */
+  animation: slideUp 8s linear infinite; /* Animation settings */
+  z-index: 1; /* Ensure images are above background content */
+}
+
+.slide-image {
+  padding-right: 3.5%;
+  width: 150px; /* Adjust width of each slide image */
+  height: 250px;
+  object-fit: cover; /* Ensure images maintain aspect ratio */
+}
+  
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-image:nth-child(1),
+.slide-image:nth-child(2) {
+  width: 50%; /* Each image takes half the width */
+}
+
+.ribbon {
+  padding-top: 10%;
+  margin-right: 10%;
+  text-align: right;
+  z-index: 2; /* Ensure ribbon text is above images */
+}
+
+.ribbon h2 {
+  color: #3b5998;
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: 'Algerian', sans-serif;
+}
+
+.slogan {
+  margin-right: 10%;
+  text-align: right;
+  z-index: 2; /* Ensure slogan text is above images */
+}
+
+.since-1992 p {
+  padding-right: 35%;
+  margin: 2px 0;
+  font-size: 2rem;
+  font-family: 'Arial', sans-serif;
+  z-index: 2; /* Ensure text is above images */
+}
+
+.colour-ur-dreams p {
+  margin: 2px 0;
+  font-size: 5rem;
+  font-family: 'Forte', cursive;
+  z-index: 2; /* Ensure text is above images */
+}
+
+.colour-ur-dreams p span {
+  font-family: 'Forte';
+}
+
+.colour-ur-dreams p span:nth-child(1) { color: #ff0000; /* Red */ }
+.colour-ur-dreams p span:nth-child(2) { color: #00ff00; /* Green */ }
+.colour-ur-dreams p span:nth-child(3) { color: #0000ff; /* Blue */ }
+.colour-ur-dreams p span:nth-child(4) { color: #ff00ff; /* Magenta */ }
+.colour-ur-dreams p span:nth-child(5) { color: #ff6600; /* Orange */ }
+.colour-ur-dreams p span:nth-child(6) { color: #cc00cc; /* Purple */ }
+.colour-ur-dreams p span:nth-child(7) { color: #008080; /* Teal */ }
+.colour-ur-dreams p span:nth-child(8) { color: #800000; /* Maroon */ }
+.colour-ur-dreams p span:nth-child(9) { color: #6600cc; /* Indigo */ }
+.colour-ur-dreams p span:nth-child(10) { color: #339966; /* Green */ }
+.colour-ur-dreams p span:nth-child(11) { color: #993300; /* Brown */ }
+.colour-ur-dreams p span:nth-child(12) { color: #003366; /* Navy */ }
+.colour-ur-dreams p span:nth-child(13) { color: #cc3300; /* Dark Orange */ }
+.colour-ur-dreams p span:nth-child(14) { color: #003300; /* Dark Green */ }
+.colour-ur-dreams p span:nth-child(15) { color: #ff3333; /* Light Red */ }
+.colour-ur-dreams p span:nth-child(16) { color: #ffcc00; /* Gold */ }
+.colour-ur-dreams p span:nth-child(17) { color: #330099; /* Dark Purple */ }
+.colour-ur-dreams p span:nth-child(18) { color: #336600; /* Dark Green */ }
+.colour-ur-dreams p span:nth-child(19) { color: #990033; /* Dark Red */ }
+.colour-ur-dreams p span:nth-child(20) { color: #660000; /* Dark Maroon */ }
+
+.aboutus {
+  background-color: whitesmoke;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  position: relative; /* Ensure z-index works correctly */
+}
+
+.aboutus-image {
+  margin-left: 9%;
+  width: 160px;
+  height: 160px;
+  border: 2px solid #000;
+  margin-right: 20px; /* Reduce the gap between image and text */
+}
+
+.aboutus-content {
+  align-items: center;
+  max-width: 1000px;
+  padding-left: 20px; /* Reduce the padding */
+}
+
+.aboutus h2 {
+  font-size: 4rem;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #3b5998; /* Change color to #3b5998 */
+}
+
+.style7 {
+  font-size: 2rem;
+  margin-top: 2%;
+  margin-bottom: 10%;
+  align-content: center;
+}
+
+.more-info {
+  color: #3b5998;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.more-info:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .aboutus {
+    flex-direction: column-reverse; /* Reverse flex direction on smaller screens */
+  }
+
+  .aboutus-image {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 20px; /* Add margin bottom to separate image and text */
+  }
+
+  .aboutus-content {
+    padding-left: 0;
+    text-align: center; /* Center align text on smaller screens */
+  }
+
+  .slide-container {
+    position: absolute;
+    left: 10px; /* Adjust left position */
+    bottom: 20px; /* Adjust bottom position */
+    display: flex;
+    flex-wrap: wrap; /* Ensure images wrap to next line */
+    gap: 10px; /* Adjust gap between images */
+    width: calc(100% - 20px); /* Set width to fit within landing-section */
+    overflow-x: hidden; /* Hide horizontal scroll on smaller screens */
+    z-index: 1; /* Ensure images are above background content */
+  }
+
+  .slide-image {
+    width: 120px; /* Adjust width of each slide image for smaller screens */
+  }
+
+  .slide-image:nth-child(1),
+  .slide-image:nth-child(2),
+  .slide-image:nth-child(3),
+  .slide-image:nth-child(4) {
+    width: 100%; /* Full width for smaller screens, one image per row */
+  }
+}
+
+.products-section {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 200px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.product-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.product-card h3 {
+  font-size: 1.6rem;
+  margin: 10px 0;
+}
+
+.product-card .more-info {
+  color: #3b5998;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.product-card .more-info:hover {
+  text-decoration: underline;
+}
+

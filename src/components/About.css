@@ -1,0 +1,29 @@
+.about-page {
+    background-color: whitesmoke;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px; /* Adjust this value if needed to place below navbar */
+  }
+  
+  .about-header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-right: 20%;
+    padding-right: 60px;
+  }
+  
+  .symbol-image {
+    width: 100px;
+    height: auto;
+    margin-left: 20px;
+  }
+  
+  .company-name {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
