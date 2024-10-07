@@ -12,20 +12,21 @@ import slide6 from '../images/slide6.jpg';
 import slide7 from '../images/slide7.jpg';
 import slide8 from '../images/slide8.jpg';
 
+// Adding images to the products array
 const products = [
-  { name: 'AcidBase', path: '/products/AcidBase' },
-  { name: 'Direct Dyes', path: '/products/direct-dyes' },
-  { name: 'Disperse Dyes', path: '/products/disperse-dyes' },
-  { name: 'Napthol Base', path: '/products/napthol-base' },
-  { name: 'Pigment Dyes', path: '/products/pigment-dyes' },
-  { name: 'Pigment Auxiliary', path: '/products/pigmentauxiliares' },
-  { name: 'Premium Dyes', path: '/products/premium-dyes' },
-  { name: 'Printing Dyes', path: '/products/printing-dyes' },
-  { name: 'Reactive Cold Dyes', path: '/products/reactive-cold-dyes' },
-  { name: 'Reactive He Dyes', path: '/products/reactive-he-dyes' },
-  { name: 'Reactive ME Dyes', path: '/products/reactive-me-dyes' },
-  { name: 'RGB RR Dyes', path: '/products/rgb-rr-dyes' },
-  { name: 'Vinylsulphone Dyes', path: '/products/vinylsulphone-dyes' },
+  { name: 'AcidBase', path: '/products/AcidBase', image: slide1 },
+  { name: 'Direct Dyes', path: '/products/direct-dyes', image: slide2 },
+  { name: 'Disperse Dyes', path: '/products/disperse-dyes', image: slide3 },
+  { name: 'Napthol Base', path: '/products/napthol-base', image: slide4 },
+  { name: 'Pigment Dyes', path: '/products/pigment-dyes', image: slide5 },
+  { name: 'Pigment Auxiliary', path: '/products/pigmentauxiliares', image: slide6 },
+  { name: 'Premium Dyes', path: '/products/premium-dyes', image: slide7 },
+  { name: 'Printing Dyes', path: '/products/printing-dyes', image: slide8 },
+  { name: 'Reactive Cold Dyes', path: '/products/reactive-cold-dyes', image: slide1 },
+  { name: 'Reactive He Dyes', path: '/products/reactive-he-dyes', image: slide2 },
+  { name: 'Reactive ME Dyes', path: '/products/reactive-me-dyes', image: slide3 },
+  { name: 'RGB RR Dyes', path: '/products/rgb-rr-dyes', image: slide4 },
+  { name: 'Vinylsulphone Dyes', path: '/products/vinylsulphone-dyes', image: slide5 },
 ];
 
 const Home = () => {
@@ -103,7 +104,7 @@ const Home = () => {
         <div className="products-container">
           {products.map((product, index) => (
             <div className="product-card" key={index}>
-              <img src="" alt={product.name} className="product-image" />
+              <img src={product.image} alt={product.name} className="product-image" />
               <h3>{product.name}</h3>
               <Link to={product.path} className="more-info">More Info</Link>
             </div>
